@@ -10,8 +10,8 @@ O objetivo deste repositório é centralizar o código do meu portfólio, garant
 
 ## 📫 Contato
 - **Nome**: Marcilio Valentim
-- **Email**: [seu-email@example.com](mailto:marciliovalentim287@gmail.com)
-- **LinkedIn**: [Seu Perfil no LinkedIn]([https://www.linkedin.com/in/seu-perfil](https://www.linkedin.com/in/marciliofreiitas/))
+- **Email**:mailto:marciliovalentim287@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/marciliofreiitas/
 
 ---
 
