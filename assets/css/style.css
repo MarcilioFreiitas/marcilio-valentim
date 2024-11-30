@@ -554,9 +554,6 @@ body.light-mode #home img#notebook-2-white {
   right: -2rem;
   animation: appear-vidro 1s 2.3s backwards;
   filter: contrast(5);
-
-  width: 220px; /* ajuste conforme necessário */
-  height: 220px; /* ajuste conforme necessário */
 }
 
 @keyframes appear {
