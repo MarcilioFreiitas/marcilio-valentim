@@ -1,4 +1,4 @@
-# 📂 Portfólio de Marcilio Valentim
+#  Marcilio Valentim
 
 Bem-vindo ao repositório do meu portfólio! Este repositório foi criado para armazenar o código fonte do meu portfólio pessoal, que estará disponível online para recrutadores e interessados em conhecer meu trabalho.
 
