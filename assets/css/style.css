@@ -231,14 +231,16 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 
 /* Estilos para os projetos */
 /* Estilos para os projetos */
+/* Estilos para os projetos */
 #projects .projects-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 #projects .project {
-  flex: 1;
-  max-width: 23%; /* Define que cada projeto ocupará aproximadamente 23% da largura do container */
+  flex: 1 1 22%; /* Ajuste para garantir que quatro projetos se alinhem corretamente */
+  max-width: 22%;
   box-sizing: border-box;
   margin: 10px;
   text-align: center;
@@ -249,7 +251,7 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 #projects .project img {
   width: 100%;
   height: 540px; /* Altura fixa ajustável */
-  object-fit: cover; /* Assegura que a imagem preencha o espaço */
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -274,6 +276,22 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 
 #projects .project a:hover {
   text-decoration: underline;
+}
+
+/* Efeito de linha crescente */
+#projects .project::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0add38; /* Cor da linha */
+  transition: width 0.3s ease;
+}
+
+#projects .project:hover::after {
+  width: 100%;
 }
 
 /* Efeito de linha crescente */
