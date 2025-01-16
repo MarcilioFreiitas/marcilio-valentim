@@ -229,21 +229,67 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 
 /* == == */
 
-#projects .card circle {
-  fill: var(--secundary-color);
+/* Estilos para os projetos */
+/* Estilos para os projetos */
+#projects .projects-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-#backToTopButton circle {
-  fill: var(--primary-color);
+#projects .project {
+  flex: 1;
+  max-width: 23%; /* Define que cada projeto ocupará aproximadamente 23% da largura do container */
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
-#contact li path,
-#navigation button.open-menu path[stroke*="#00856F"] {
-  stroke: var(--primary-color);
+#projects .project img {
+  width: 100%;
+  height: 540px; /* Altura fixa ajustável */
+  object-fit: cover; /* Assegura que a imagem preencha o espaço */
+  transition: transform 0.3s ease;
 }
 
-#navigation.scroll button.open-menu path[stroke*="#00856F"] {
-  stroke: var(--paragraph-2);
+#projects .project img:hover {
+  transform: scale(1.05); /* Zoom na imagem ao passar o mouse */
+}
+
+#projects .project h3 {
+  margin-top: 10px;
+}
+
+#projects .project p {
+  margin: 10px 0;
+}
+
+#projects .project a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff; /* Cor do link */
+}
+
+#projects .project a:hover {
+  text-decoration: underline;
+}
+
+/* Efeito de linha crescente */
+#projects .project::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0dbe51; /* Cor da linha */
+  transition: width 0.3s ease;
+}
+
+#projects .project:hover::after {
+  width: 100%;
 }
 
 /*===== NAVIGATION ===================================*/
@@ -1625,22 +1671,6 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   /*===== PROJECTS ==================================*/
-
-  #projects .card {
-    padding: 1.8rem;
-  }
-
-  #projects .card .buttons {
-    flex-direction: column;
-    left: 50%;
-    right: auto;
-    transform: translate(-50%, -50%);
-  }
-
-  #projects .card .buttons a {
-    width: 4rem;
-    height: 4rem;
-  }
 
   /*===== CONTACT ==================================*/
 
